@@ -1,0 +1,15 @@
+<button onclick="airhorn()" style="border: none; background-color: white;">
+<video id="videoairhorn" src="airhorn.mp4" style="width: 100%;"></video>
+</button>
+<audio id="airhorn">
+  <source src="airhorn.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+<script>
+function airhorn() {
+  var thissound = document.getElementById('airhorn');
+  var video = document.getElementById('videoairhorn');
+  thissound.play();
+  video.play();
+}
+</script>
